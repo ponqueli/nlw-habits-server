@@ -1,7 +1,7 @@
 import { FastifyInstance } from "fastify";
 import { z } from 'zod'
-import { prisma } from "./lib/prisma";
 import dayjs from 'dayjs'
+import { prisma } from "./lib/prisma";
 
 export async function appRoutes(app: FastifyInstance) {
   app.post('/habits', async (request) => {
